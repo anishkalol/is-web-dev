@@ -1,0 +1,514 @@
+/* roboto from google fonts */ @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+/* lora from google fonts */ @import url('https://fonts.googleapis.com/css2?family=Lora:wght@600&family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    background-color: #FFF5E2;
+}
+
+
+a {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #FF4716;
+    text-decoration: none;
+}
+/* styling for logo in header */
+.logo {
+    float: left;
+    width: 100px;
+    margin: 30px;
+
+}
+/* styling for nav bar */
+nav ul {
+    list-style-type: none;
+    float: right;
+    padding: .5em .5em 3em .5em;
+    margin-top: 50px;
+}
+
+nav ul li {
+    display: inline-block;
+}
+nav ul a {
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    padding: 15px;
+    color: #FF4716;
+    transition: all 0.3s ease 0s;
+    padding: 0px 20px;
+}
+
+nav ul a:hover {
+    color: #F6A9A9
+}
+
+nav ul a.selected {
+    color: #F6A9A9
+}
+
+nav ul a.selected:hover {
+    color: #F6A9A9
+}
+
+/* center text on home page */
+.main-title {
+    color: #FF4716;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.main-title h1 {
+    font-family: 'Lora', serif;
+    font-size: 60px;
+}
+.main-title p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+/* menu button on home page */
+.main-menu-btn {
+    display: inline-block;
+    text-decoration: none;
+    color: #FCEBEF;
+    border: 2px solid #FF4716;
+    border-radius: 5px;
+    padding: 12px 30px;
+    font-size: 15px;
+    background: #FF4716;
+    cursor: pointer;
+}
+
+.main-menu-btn:hover {
+    border: 2px solid #FF4716;
+    color: #FF4716;
+    background: #FFF5E2;
+    transition: 0.3s;
+}
+
+/* footer styling */
+footer {
+    position:fixed;
+    left: 0px;
+    bottom: 0px;
+    height: 50px;
+    width: 100%;
+    clear: both;
+    margin: 0;
+    padding-top: 20px;
+    padding-bottom: 0px;
+    font-family: 'Roboto', sans-serif;
+    color: #FCEBEF;
+    font-size: 15px;
+    text-align: center;
+    background-color: #FF4716;
+}
+
+/* location cards */
+
+.order-online-title {
+    clear: right;
+    text-align: center;
+    margin-left: 13%;
+    margin-right: 12%;
+    padding: 20px 20px;
+    font-family: 'Lora', sans-serif;
+    font-size: 50px;
+    color: #FF4716;
+}
+
+.location-buttons {
+    clear: right;
+    margin-left: 13%;
+    padding-top: 10px;
+}
+
+.location-buttons .col-3 {
+    width: 300px;
+    float: left;
+    margin: 10px;
+    text-align: center;
+    padding: 20px 20px;
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.1);
+    transition: transform 0.5s;
+    margin-bottom: 100px;
+}
+
+.location-buttons .col-3 h3 {
+    font-family: 'Lora', serif;
+    text-align: center;
+    padding: 20px 20px;
+    color: #FF4716;
+}
+
+.location-buttons .col-3 p {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    padding: 20px 20px;
+    color: #FF4716;
+}
+
+.location-buttons .col-3:hover {
+    transform: translateY(-10px);
+}
+
+.shady-mt-strip-btn {
+    display: inline-block;
+    text-decoration: none;
+    color: #FCEBEF;
+    border: 2px solid #FF4716;
+    border-radius: 5px;
+    padding: 12px 30px;
+    font-size: 15px;
+    background: #FF4716;
+    cursor: pointer;
+}
+
+.shady-mt-strip-btn:hover {
+    border: 2px solid #FF4716;
+    color: #FF4716;
+    background: #FFF5E2;
+    transition: 0.3s;
+}
+/* food gallery */
+.gallery-title {
+    clear: right;
+    text-align: center;
+    margin-right: 170px;
+    padding: 20px 20px;
+    font-family: 'Lora', sans-serif;
+    font-size: 50px;
+    color: #FF4716;
+
+}
+.gallery-container {
+    clear: right;
+    max-width: 1100px;
+    margin-left: 230px;
+    background: #FFF5E2;
+    overflow: auto;
+}
+
+.gallery {
+    float: left;
+    margin: 10px;
+    border: 5px solid #FF4716;
+    border-radius: 5px;
+    width: 300px;
+    background-color: #FF4716;
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.1);
+    transition: transform 0.5s;
+}
+
+.gallery img {
+    width: 300px;
+    height: auto;
+}
+
+.gallery:hover {
+    transform: translateY(-10px);
+}
+.desc {
+    font-family: 'Roboto', sans-serif;
+    padding: 15px;
+    text-align: center;
+    background-color: #FF4716;
+    color: #FCEBEF;
+}
+/* menus */
+.menus {
+    padding: 100px;
+}
+
+.menus .menu-elems {
+    clear: both;
+    width: 50%;
+    float: left;
+    padding: 20px;
+    margin: 100px;
+}
+
+.menus h1 {
+    font-family: 'Lora', serif;
+    font-size: 60px;
+    color: #FF4716;
+    margin-top: 70px;
+}
+
+.menus h3 {
+    font-family: 'Roboto', sans-serif;
+    color: #FF4716;
+    margin-top: 30px;
+}
+
+.menu-btns {
+    margin-top: 200px;
+    float: left;
+    padding: 40px 20px;
+    margin-bottom: 100px
+}
+.menu-btns .btns {
+    text-decoration: none;
+    color: #FCEBEF;
+    border: 2px solid #FF4716;
+    border-radius: 5px;
+    padding: 12px 30px;
+    font-size: 15px;
+    background: #FF4716;
+    cursor: pointer;
+}
+
+.menu-btns .btns:hover {
+    border: 2px solid #FF4716;
+    color: #FF4716;
+    background: #FFF5E2;
+    transition: 0.3s;
+}
+
+/* reviews */
+.reviews-title {
+    clear: right;
+    text-align: center;
+    margin-left: 13%;
+    margin-right: 12%;
+    padding: 20px 20px;
+    font-family: 'Lora', sans-serif;
+    font-size: 50px;
+    color: #FF4716;
+}
+.reviews-container {
+    margin-left: 13%;
+}
+
+.reviews-container .col-1 {
+    width: 300px;
+    float: left;
+    margin: 10px;
+    text-align: center;
+    padding: 20px 20px;
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.5s;
+    margin-bottom: 80px;
+}
+
+.reviews-container .col-1 i {
+    color: #FF4716;
+}
+.reviews-container .col-1 h3 {
+    font-family: 'Lora', serif;
+    text-align: center;
+    padding: 20px 20px;
+    color: #FF4716;
+}
+
+.reviews-container .col-1 p {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    padding: 20px 20px;
+    color: #FF4716;
+}
+
+.reviews-container .col-1:hover {
+    transform: translateY(-10px);
+}
+
+/* locations page */
+.locations-title {
+    clear: right;
+    text-align: center;
+    margin-right: 170px;
+    padding: 20px 20px;
+    font-family: 'Lora', sans-serif;
+    font-size: 50px;
+    color: #FF4716;
+}
+.map-container {
+    clear: right;
+    max-width: 1100px;
+    margin-left: 15%;
+    background: #FFF5E2;
+    overflow: auto;
+}
+
+.map-container .maps {
+    float: left;
+    margin-left: 200px;
+    margin: 30px;
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.1);
+    transition: transform 0.5s;
+}
+
+/* store hours table */
+.map-container .store-name-hours {
+    margin-bottom: 40px;
+    padding: 40px 20px;
+}
+
+
+.map-container .store-name-hours table {
+    border-collapse: collapse;
+    font-family: 'Roboto', sans-serif;
+    margin: 25px 0;
+    margin-bottom: 350px;
+    border: 2px solid #FF4716;
+    border-radius: 5px;
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.1);
+    transition: transform 0.5s;
+}
+
+.map-container .store-name-hours table thead tr th {
+    padding: 10px 20px;
+    font-family: 'Lora', sans-serif;
+    color: #FCEBEF;
+    font-size: 20px;
+    background-color: #FF4716;
+}
+
+.map-container .store-name-hours table  tr th {
+    padding: 10px 20px;
+}
+
+.map-container .store-name-hours table  tr:hover {
+    padding: 10px 20px;
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.1);
+    transition: transform 0.5s;
+    transform: translateY(-10px);
+}
+
+.map-container .store-name-hours table tr td {
+    padding: 10px 20px;
+}
+
+/* contact page */
+
+.contact-title {
+    clear: right;
+    text-align: center;
+    margin-left: 13%;
+    margin-right: 12%;
+    padding: 20px 20px;
+    font-family: 'Lora', sans-serif;
+    font-size: 50px;
+    color: #FF4716;
+}
+/* contact info table */
+.contact-table {
+    clear: right;
+    padding: 20px 40px;
+    
+}
+
+.contact-table .email-social {
+    margin-left: 39%;
+    margin-right: 28%;
+}
+
+.contact-table .phone {
+    margin-left: 42%;
+    margin-right: 30%;
+}
+.email-social thead tr th {
+    font-family: 'Lora', serif;
+    font-size: 20px;
+}
+
+.contact-table table {
+    margin: 25px 0px;
+}
+
+.contact-table table tr th{
+    font-family: 'Lora', serif;
+    font-size: 20px;
+    color: #FF4716;
+}
+
+.contact-table table tr td {
+    font-size: 15px;
+    padding: 10px 10px;
+    font-family: 'Roboto', sans-serif;
+}
+/* contact form */
+.contact-form {
+    clear: right;
+    max-width: 700px;
+    overflow: auto;
+    margin-right: 28%;
+    margin-left: 30%;
+    padding: 20px 20px;
+    border-color: #FF4716;
+    border-width: 5px;
+    
+}
+
+.contact-form form fieldset{
+    border-width: 5px;
+    border-color: #FF4716;
+    border-radius: 5px;
+    padding: 10x 10px;
+    background-color: #FF4716;
+    
+    margin-bottom: 100px;
+}
+
+.contact-form form fieldset label {
+    font-family: 'Roboto', sans-serif;
+    margin-left: 10%;
+    background-color: #FF4716;
+    color: #FCEBEF;
+    
+}
+
+.contact-form form fieldset input {
+    margin-left: 10%;
+    background-color: #FCEBEF;
+    border-color: #FCEBEF;
+}
+
+.contact-form input[type=text] {
+    width: 70%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    margin-left: 10%;
+    border-radius: 5px;
+}
+
+.contact-form textarea {
+    margin-left: 10%;
+    background-color: #FCEBEF;
+    border-color: #FCEBEF;
+    border-radius: 5px;
+    width: 78%;
+}
+
+.contact-form fieldset input[type=submit] {
+    border: 2px solid #FCEBEF;
+    background-color: #FF4716;
+    border-radius: 5px;
+    padding: 12px 30px;
+    font-size: 15px;
+    color: #FCEBEF;
+    cursor: pointer;
+    margin-bottom: 40px;
+}
+
+.contact-form fieldset input[type=submit]:hover {
+    border: 2px solid #FF4716;
+    background-color: #FCEBEF;
+    border-radius: 5px;
+    padding: 12px 30px;
+    font-size: 15px;
+    color: #FF4716;
+    transition: 0.3s;
+    
+}
