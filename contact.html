@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang = "en">
+
+    <head>
+        <meta charset = "utf-8" />
+        <meta name="viewport" content = "width=device-width, initial-scale=1">
+        <meta name = "author" content = "Anishka Bompelli" >
+        <meta name = "keywords" content = "Pamela's Diner, Pittsburgh">
+        <meta name = "description" content = "Pamela's Diner Official Website">
+        <link rel = "stylesheet" media = "all" type = "text/css" href = "css/styles.css" />
+        <!-- font taken from <cdnjs> -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <script src = "js/scripts.js"></script>
+        <title>
+            Pamela's Diner
+        </title>
+    </head>
+    <body>
+        <header>
+            <!-- nav bar -->
+            <nav>
+                <img class = "logo" src = "images/pamelaslogo.png" alt = "logo">
+                <ul>
+                    <li><a href = "index.html"> HOME</a></li>
+                    <li><a href = "orderonline.html"> ORDER ONLINE</a></li>
+                    <li><a href = "menu.html"> MENU </a></li>
+                    <li><a href = "locations.html"> LOCATIONS </a></li>
+                    <li><a href = "reviews.html"> REVIEWS</a></li>
+                    <li><a class = "selected" href = "contact.html"> CONTACT</a></li>
+                </ul>
+            </nav>
+        </header>
+        <!-- contact form -->
+        <div class = "contact-title">
+            <h3> Contact Us </h3>
+        </div>
+        <div class = "contact-table">
+            <table class = "email-social">
+                <thead>
+                    <tr>
+                        <th colspan = "2"> Contact Information </th>
+                    </tr>
+                </thead>
+                <tr>
+                    <th>   </th>
+                    <th>   </th>
+                </tr>
+                <tr>
+                    <td> Address </td>
+                    <td> 60 21st St, Pittsburgh, PA 15222 </td>
+                </tr>
+                <tr>
+                    <td> Email Address </td>
+                    <td> <a href="mailto:info@pamelasdiner.com">info@pamelasdiner.com</a></td>
+                </tr>
+                <tr>
+                    <td> Social Media </td>
+                    <td> <a href = "https://www.instagram.com/pamelasdiner/?hl=en"> <img src = "images/instagram.png" alt = "instagram" width = 30 height = 30></a>
+                         <a href = "https://www.facebook.com/pamelasdiner/"> <img src = "images/facebook.png" alt = "facebook" width = 30 height = 30></a></td>
+                </tr>
+            </table>
+            <table class = "phone">
+                <thead>
+                    <tr>
+                        <th colspan = "2"> Phone Numbers</th>
+                    </tr>
+                </thead>
+                <tr>
+                    <th>   </th>
+                    <th>   </th>
+                </tr>
+                <tr>
+                    <td> Strip District </td>
+                    <td> +14122816366 </td>
+                </tr>
+                <tr>
+                    <td> Forbes Ave </td>
+                    <td> +14126834066 </td> 
+                </tr>
+                <tr>
+                    <td> Walnut St. </td>
+                    <td> +14126831003 </td>
+                </tr>
+            </table>
+        </div>
+        <div class = "contact-form">
+            <form onsubmit = "return validate()">
+                <fieldset>
+                    <label for = "firstname"> First Name</label><br/>
+                    <input type = "text" id = "firstname" name = "firstname" placeholder = "First Name" size = "20" maxlength = "250" required><br/><br/>
+                    
+                    <label for = "lastname"> Last Name</label><br/>
+                    <input type = "text" id = "lastname" name = "lastname" placeholder = "Last Name" size = "20" maxlength = "250" required><br/><br/>
+               
+                    <label for = "email"> Email Address</label><br/>
+                    <input type = "text" id = "email" name = "email" placeholder = "abc@defg.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required/><br/><br/>
+                    
+                    <label for = "phone"> Phone Number </label><br/>
+                    <input type = "text" id = "phone" name = "phone" placeholder = "1234567890" value = "" required><br/><br/>
+
+                    <label for = "check"> I would like to be surbscribed to Pamela's newsletter</label><br/>
+                    <input type="checkbox" id="newsletter" name="newsletter" value="newsletter"> </br>
+ 
+
+                    <label for = "message"> Message</label><br/>
+                    <textarea name = "message" id = "message" placeholder = "Hi there!" cols = "50" rows = "10" maxlength = "250" required>  </textarea> <br/><br/>
+                    
+                    <input type = "submit" name= "btn">
+                </fieldset>
+            </form>
+        </div>
+        <!-- footer -->
+        <footer>
+            &copy; 2022 Pamela's Diner <br/>
+        </footer>
+    </body>
+    </html>
+    
